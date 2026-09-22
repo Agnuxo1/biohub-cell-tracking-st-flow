@@ -1,0 +1,17 @@
+data/
+artifacts/
+.venv/
+.pytest_cache/
+.pytest_tmp*/
+__pycache__/
+*.py[cod]
+*.zarr/
+*.geff/
+*.csv
+!sample_submission.csv
+*.pt
+*.pth
+*.ckpt
+*.onnx
+.env*
+kaggle.json
