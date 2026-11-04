@@ -1,0 +1,316 @@
+{
+  "title": "ST-Flow",
+  "subtitle": "Physically constrained 3D + time cell tracking",
+  "figures": [
+    {
+      "kind": "flow",
+      "id": "fig-01",
+      "basis": "Technical schematic",
+      "title": "Use physical space for association",
+      "subtitle": "Chunk OME-Zarr   /   Respect voxel spacing   /   Suppress transients   /   Cost in micrometres",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.115,
+          0.52,
+          "Lazy read"
+        ],
+        [
+          0.38,
+          0.52,
+          "Scale-aware spots"
+        ],
+        [
+          0.62,
+          0.52,
+          "Frame consensus"
+        ],
+        [
+          0.885,
+          0.52,
+          "Motion gate"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ],
+        [
+          2,
+          3,
+          ""
+        ]
+      ],
+      "alt": "Use physical space for association. Lazy read: Chunk OME-Zarr; Scale-aware spots: Respect voxel spacing; Frame consensus: Suppress transients; Motion gate: Cost in micrometres"
+    },
+    {
+      "kind": "xy",
+      "basis": "Illustrative simulation",
+      "title": "A lineage divides into two tracks",
+      "subtitle": "Conceptual association in physical coordinates; not observed microscopy",
+      "source": "Source: synthetic centroid paths illustrating documented graph semantics",
+      "xlim": [
+        0,
+        6
+      ],
+      "ylim": [
+        0,
+        12
+      ],
+      "xlabel": "Time (arbitrary frame index)",
+      "ylabel": "Position (µm)",
+      "series": [
+        {
+          "label": "Parent",
+          "points": [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              5.4
+            ],
+            [
+              2,
+              5.8
+            ],
+            [
+              3,
+              6.2
+            ]
+          ]
+        },
+        {
+          "label": "Child A",
+          "points": [
+            [
+              3,
+              6.2
+            ],
+            [
+              4,
+              7.1
+            ],
+            [
+              5,
+              7.8
+            ],
+            [
+              6,
+              8.5
+            ]
+          ]
+        },
+        {
+          "label": "Child B",
+          "points": [
+            [
+              3,
+              6.2
+            ],
+            [
+              4,
+              5.4
+            ],
+            [
+              5,
+              4.8
+            ],
+            [
+              6,
+              4.2
+            ]
+          ]
+        }
+      ],
+      "alt": "A lineage divides into two tracks. Conceptual association in physical coordinates; not observed microscopy",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "yticks": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "id": "fig-02"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-03",
+      "basis": "Technical schematic",
+      "title": "Offline checks before competition data",
+      "subtitle": "Pin paths   /   Graph contracts   /   External data root   /   Config plus hashes",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.115,
+          0.52,
+          "Configure"
+        ],
+        [
+          0.38,
+          0.52,
+          "Run tests"
+        ],
+        [
+          0.62,
+          0.52,
+          "Provide data"
+        ],
+        [
+          0.885,
+          0.52,
+          "Record run"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ],
+        [
+          2,
+          3,
+          ""
+        ]
+      ],
+      "alt": "Offline checks before competition data. Configure: Pin paths; Run tests: Graph contracts; Provide data: External data root; Record run: Config plus hashes"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-04",
+      "basis": "Technical schematic",
+      "title": "What the validation supports",
+      "subtitle": "File and graph rules   /   Benchmark evidence   /   Requires separate study",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.16,
+          0.52,
+          "Unit checks"
+        ],
+        [
+          0.5,
+          0.52,
+          "Challenge score"
+        ],
+        [
+          0.84,
+          0.52,
+          "Biological validation"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ]
+      ],
+      "alt": "What the validation supports. Unit checks: File and graph rules; Challenge score: Benchmark evidence; Biological validation: Requires separate study"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-05",
+      "basis": "Technical schematic",
+      "title": "Reuse and citation",
+      "subtitle": "MIT notice applies   /   Keep sponsor terms   /   Use CITATION.cff",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.16,
+          0.52,
+          "Original code"
+        ],
+        [
+          0.5,
+          0.52,
+          "Competition data"
+        ],
+        [
+          0.84,
+          0.52,
+          "Cite the work"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ]
+      ],
+      "alt": "Reuse and citation. Original code: MIT notice applies; Competition data: Keep sponsor terms; Cite the work: Use CITATION.cff"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-06",
+      "basis": "Technical schematic",
+      "title": "How the references inform follow-up",
+      "subtitle": "Resolve DOI or arXiv ID   /   Predefine comparisons   /   Separate hypotheses and results",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.16,
+          0.52,
+          "Primary sources"
+        ],
+        [
+          0.5,
+          0.52,
+          "Study design"
+        ],
+        [
+          0.84,
+          0.52,
+          "Evidence to report"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ]
+      ],
+      "alt": "How the references inform follow-up. Primary sources: Resolve DOI or arXiv ID; Study design: Predefine comparisons; Evidence to report: Separate hypotheses and results"
+    }
+  ]
+}
