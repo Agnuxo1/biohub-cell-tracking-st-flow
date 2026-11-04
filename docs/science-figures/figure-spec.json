@@ -1,0 +1,99 @@
+{
+  "title": "ST-Flow",
+  "sub": "Physically constrained 3D + time cell tracking",
+  "issue": "Reproducible engineering baseline",
+  "sections": [
+    [
+      "Why this baseline is useful",
+      "Use physical space for association",
+      [
+        "Lazy read",
+        "Scale-aware spots",
+        "Frame consensus",
+        "Motion gate"
+      ],
+      [
+        "Chunk OME-Zarr",
+        "Respect voxel spacing",
+        "Suppress transients",
+        "Cost in micrometres"
+      ]
+    ],
+    [
+      "Pipeline",
+      "From volumes to a lineage graph",
+      [
+        "Image volumes",
+        "Candidates",
+        "Temporal edges",
+        "Division filter"
+      ],
+      [
+        "3D plus time",
+        "Anisotropic detection",
+        "Sparse gated links",
+        "Check graph invariants"
+      ]
+    ],
+    [
+      "Reproduce locally",
+      "Offline checks before competition data",
+      [
+        "Configure",
+        "Run tests",
+        "Provide data",
+        "Record run"
+      ],
+      [
+        "Pin paths",
+        "Graph contracts",
+        "External data root",
+        "Config plus hashes"
+      ]
+    ],
+    [
+      "Scientific and competition limits",
+      "What the validation supports",
+      [
+        "Unit checks",
+        "Challenge score",
+        "Biological validation"
+      ],
+      [
+        "File and graph rules",
+        "Benchmark evidence",
+        "Requires separate study"
+      ]
+    ],
+    [
+      "License",
+      "Reuse and citation",
+      [
+        "Original code",
+        "Competition data",
+        "Cite the work"
+      ],
+      [
+        "MIT notice applies",
+        "Keep sponsor terms",
+        "Use CITATION.cff"
+      ]
+    ],
+    [
+      "Bibliography and research directions",
+      "How the references inform follow-up",
+      [
+        "Primary sources",
+        "Study design",
+        "Evidence to report"
+      ],
+      [
+        "Resolve DOI or arXiv ID",
+        "Predefine comparisons",
+        "Separate hypotheses and results"
+      ]
+    ]
+  ],
+  "header_source": "assets/header.png",
+  "repository": "biohub-cell-tracking-st-flow"
+}
