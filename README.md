@@ -12,6 +12,10 @@ ST-Flow is an open-source, competition-ready baseline for [Biohub – Cell Track
 
 ![Tracking pipeline](assets/pipeline.png)
 
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> Lazy OME-Zarr access and sparse, motion-gated linking are designed to keep long 3D cell-tracking sequences manageable without loading every volume or considering every possible association. Physical voxel spacing and conservative division checks make the workflow more interpretable and reusable. The <a href="#why-this-baseline-is-useful">documented design</a> addresses memory and candidate selection; biological validity requires separate evaluation.</sub>
+<!-- impact-note:end -->
+
 ## Why this baseline is useful
 
 ![Use physical space for association. Lazy read: Chunk OME-Zarr; Scale-aware spots: Respect voxel spacing; Frame consensus: Suppress transients; Motion gate: Cost in micrometres](docs/figures/fig-01.gif)
